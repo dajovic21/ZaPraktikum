@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: red;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: black;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: red;
+}
+
+.aside {
+  background-color: black;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body class="bodd">
+
+<div class="header">
+  <h1>Formula 1</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="index.html">Raspored</a></li>
+      <li ><a href= "rezultati.html">Rezultati</a></li>
+      <li> <a href="vozaci.html">Vozaci</a></li>
+      <li><a href="ekipe.html">Ekipe</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Koje su to ekipe u F1?</h1>
+    <p>Momčadi Formule 1 izrađuju šasiju bolida po standardu ali se dopuštaju sitne dorade na šasiji u svrhu povećanja brzine. Nekada su momčadi u Formuli same izrađivale motore, ali danas to radi manji broj momčadi. Momčadi kupuju motore od kompanija (BMW, Mercedes-Benz, Renault, Toyota, Honda) koje su specijalizirane za izradu motora bolida Formule 1, i na taj način ušteđuju velike novce u svom budžetu. Većina prozvođača motora opskrbljuju motorima jednu ili eventualno dvije momčadi prvenstveno radi velikih troškova u razvoju novog motora. Jedini komercijalni proizvođač motora je Cosworth.
+
+        Ime momčadi u pravilu je ime konstruktora šasije ako ne proizvodi motore za bolide tada u imenu ima i naziv proizvođača motora. Primjer: Momčad McLaren izrađuje šasiju svojih bolida, Mercedes im izrađuje motore (McLaren-Mercedes). Momčadi Ferrari i Mercedes sami izrađuju i šasije i motore.
+        
+        U prvoj sezoni 1950. sudjelovalo je 18 momčadi od kojih su mnoge zbog velikih troškova brzo izašle iz svjetskog prvenstva. Momčad Ferrari je jedina momčad koja se natječe od 1950. do 2014., kada se natječe 10 momčadi svaka s po dva bolida. Iako momčadi nerado govore o veličini budžeta on se po procjenama kreće od 75 do 500 milijuna američkih dolara.
+        
+        Nova momčad koja ulazi u Svjetsko prvenstvo Formule 1 mora uplatiti 25 milijuna engleskih funti FIA-i, koji se na kraju sezone raspoređuju ostalim momčadima. Nove momčadi preferiraju kupnju neke već postojeće momčadi koje su u formuli 1 smanjujući tako troškove (primjerice Toro Rosso kupio je Minardi, a Mercedes Brawn GP).
+        
+        Svaki bolid ima svoj broj. Prošlogodišnji pobjednik Svjetskog prvenstava vozača ima broj 1 a njegov momčadski kolega broj 2. Brojevi ostalih se dodjeljuju na osnovu osvojene pozicije momčadi u prošlogodišnjem Svjetskom prvenstvu konstruktora (momčadi). U slučaju da svjetski prvak (vozač) više nije aktivan u Formuli 1 njegova momčad dobiva brojeve za svoje vozače 0 i 2. Ovo pravilo je zato što se brojevi vozača ne dodjeljuju vozačima nego momčadima. Broj 13 se ne koristi. S novim pravilima iz 2014. godine svako može birati svoj broj, samo ne mogu birati broj 1,koji je rezerviran za prošlogodišnjeg prvaka, i broj 17 koji je umirovljen u 2015. godini zbog Julesa Bianchia koji je podlegao ozljedama koje je zadobio na VN Japana 2014. godine.
+        
+        Michael Schumacher drži rekord u najviše osvojenih Svjetskih prvaka vozača (7) a momčad Ferrari drži rekord u Svjetskom prvenstvu konstruktora (16). Jochen Rindt je jedini koji je postumno osvojio naslov svjetskog prvaka.</p>
+
+        
+        
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Tabela sa bodovima:</h2>
+      <ul>
+        <li>Red Bull Racing</li>
+        <li>Mercedes</li>
+        <li>Scuderia Ferrari</li>
+        <li>McLaren</li>
+        <li>Aston Martin</li>
+        <li>Alpha Tauri</li>
+        <li>Haas F1 Team</li>
+        <li>Wiliams</li>
+        <li>Alpina</li>
+        <li>Alfa Romeo</li>
+      </ul>
+
+      
+
+  
+      
+    </div>
+  </div>
+</div>
+<div class="footer">
+    <h2>Najbrzi sport na svijetu! Zavisni smo od brznine! Vezite se polecemo!</h2>
+</div>
+
+
+</body>
+</html>
